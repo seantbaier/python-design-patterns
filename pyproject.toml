@@ -6,12 +6,25 @@ authors = ["Sean Baier <sean.t.baier@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+pre-commit = "^2.18.1"
 
 [tool.poetry.dev-dependencies]
 black = "^22.3.0"
 mypy = "^0.942"
 isort = "^5.10.1"
 flake8 = "^4.0.1"
+
+[tool.black]
+line-length = 119
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''/(
+  | \.git
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | \.vscode
+  | docker)/'''
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
