@@ -5,11 +5,14 @@ description = ""
 authors = ["Sean Baier <sean.t.baier@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.9,<3.11"
 pre-commit = "^2.18.1"
 state_machine = "^0.2.10"
 pyparsing = "^3.0.9"
 cowpy = "^1.1.5"
+reactivex = "^4.0.0"
+nameko = "^2.14.1"
+Faker = "^13.11.1"
 
 [tool.poetry.dev-dependencies]
 black = "^22.3.0"
